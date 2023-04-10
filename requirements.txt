@@ -1,0 +1,8 @@
+jupyter-book
+numpy
+h5py
+matplotlib
+ipython
+ipykernel
+decorator
+scipy
