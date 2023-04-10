@@ -1,0 +1,6 @@
+jupyter-book
+matplotlib
+numpy
+scipy
+h5py
+json
