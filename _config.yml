@@ -32,4 +32,4 @@ html:
 
 launch_buttons:
   notebook_interface        : jupyterlab
-  binderhub_url             : https://mybinder.org # TODO update
+  binderhub_url             : https://mybinder.org/v2/gh/UCB-stat-159-s23/hw04-Group27/main?labpath=LOSC_Event_tutorial.ipynb
