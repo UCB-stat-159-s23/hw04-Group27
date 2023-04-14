@@ -19,7 +19,7 @@ update_environment :
 ## - html: build JupyterBook
 .PHONY : html
 html :
-	jupyterbook build .
+	jupyter-book build .
 
 ## - clean: clean up the figures, audio, and _build folders
 .PHONY : clean
