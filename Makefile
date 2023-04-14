@@ -3,12 +3,12 @@
 .ONESHELL:
 SHELL = /bin/bash
 
-## - create_environment: create the environment
-.PHONY : create_environment
-create_environment :
+## - env: create and configures the environment
+.PHONY : env
+env :
 	source /srv/conda/etc/profile.d/conda.sh
 	conda env create -f environment.yml
-	conda activate notebook
+	conda activate ligo
 
 ## - update_environment: install ipykernel and create the associated kernel
 .PHONY : update_environment
@@ -26,4 +26,4 @@ html :
 clean :
 	rm -rf figures/*
 	rm -rf audio/*
-	rm -rf _build/*
+	rm -rf _build
