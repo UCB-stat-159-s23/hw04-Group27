@@ -15,21 +15,24 @@ latex:
   latex_documents:
     targetname: book.tex
 
-# Add a bibtex file so that we can create citations
-bibtex_bibfiles:
-  - references.bib
-
 # Information about where the book exists on the web
 repository:
   url: https://github.com/UCB-stat-159-s23/hw04-Group27
   path_to_book: /
   branch: gh-pages
 
-# Add GitHub buttons to your book
-# See https://jupyterbook.org/customize/config.html#add-a-link-to-your-repository
+# Add GitHub & Binder buttons
 html:
   use_repository_button: true
 
 launch_buttons:
   notebook_interface        : jupyterlab
   binderhub_url             : https://mybinder.org/v2/gh/UCB-stat-159-s23/hw04-Group27/main?labpath=LOSC_Event_tutorial.ipynb
+
+# Add a bibtex file so that we can create citations
+bibtex_bibfiles:
+  - references.bib
+
+sphinx:
+  config:
+    bibtex_reference_style: author_year
